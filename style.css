@@ -1,0 +1,224 @@
+/* *styles for main page */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height:100%;
+    background:#282a36;
+   
+}
+span{
+    text-transform:uppercase;
+    font-size: 13px;
+}
+button{
+    border-radius: 2px;
+}
+
+/* *============================================== */
+
+#main-nav{
+    width: 160px;
+    height: 100%;
+    background:#44475a;
+    padding-top: 10px;
+    padding-left: 10px; 
+}
+
+.aligment{
+    width:19px;
+    text-align: center;
+    padding: 3px;
+    margin: 0 auto;
+    line-height: .6;
+}
+
+.logo{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* *style for initab logo */
+.image:hover{
+    opacity:0;
+}
+
+.newlook:hover{
+    background-image:url("yellowLogo.png");
+    width:115px;
+    height:50px;
+}
+
+
+
+/* *Styles for the social meadia icons on the bottom of the page */
+
+.social-icon{
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+   
+}
+
+#container-one{
+    background-color:#113977;
+    width:22px;
+    height:22px;
+    border-radius: 50%;
+}
+
+#container-two{
+    background-color:#3f629b;
+    width:22px;
+    height:22px;
+    border-radius: 50%;
+}
+
+#container-three{
+    background-color:#5d97f4;
+    width:22px;
+    height:22px;
+    border-radius: 50%;
+}
+
+#container-four{
+    background-color:#1a57ba;
+    width:22px;
+    height:22px;
+    border-radius: 50%;
+}
+
+#container-five{
+    background-color:rgb(130, 130, 199);
+    width:22px;
+    height:22px;
+    border-radius: 50%;
+}
+
+.fa-facebook-f{
+    color:white;
+    margin-left:6px;
+    margin-top:5px;
+} 
+
+.fa-linkedin-in{
+    color:white;
+    margin-left:6px;
+    margin-top:5px;
+
+}
+
+.fa-twitter{
+    color:white;
+    margin-left:5px;
+    margin-top:5px;
+
+}
+
+.fa-reddit-alien{
+    color:white;
+    margin-left:4px;
+    margin-top:3px;
+
+}
+
+.fa-github-alt{
+    color:white;
+    margin-left:5px;
+    margin-top:5px;
+}
+
+
+
+
+
+#setting-button{
+    background-color:#66d9ef;
+    border: none;
+}
+
+#gists-button{
+    background-color: #50e74b;
+    border: none;
+
+}
+
+#stack-button{
+    background-color: #e9934d;
+    border:none;
+
+}
+
+#trend-button{
+    background-color: #f1579f;
+    border: none;
+
+}
+
+#scratch-button{
+    background-color: #9471d4;
+    border:none;
+
+}
+#playground-button{
+    background-color:#fff;
+    border: none;
+
+}
+
+#help-button{
+    background-color: #eccd6e;
+    border:none;
+
+}
+
+/* *Style for sections that hold main content */
+
+#sections{
+    position: absolute;
+    left:170px;
+    top:0;
+    background-color: #282a36;
+    height:100vh;
+    width:100vw;
+}
+
+
+.reddit-section .fa-reddit-alien{
+    color:#8be9fd;
+}
+.reddit-text{
+    color:#8be9fd;
+}
+
+.section-two::-webkit-scrollbar{ opacity:0;  width:0px}
+
+
+.section-two{
+    position: absolute;
+    width:250px;
+    overflow-y: scroll;
+    height:90vh;
+    left:35px;
+    padding-top:35px;
+    
+    
+   
+}
+
+.section-three{
+     width:600px;
+    height:100px;
+   
+    position:relative;
+    padding-top: 35px;
+    left:355px;
+     
+}
+
+.fa-clock{
+    color:#8be9fd;
+}

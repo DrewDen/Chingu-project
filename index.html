@@ -9,51 +9,82 @@
     <title>Intab Landing Page</title>
 </head>
 <body>
-<div id="main-area">
-    <section>
-        <button id="setting-button" class="aligment"><i class="fa fa-wrench" aria-hidden="true"></i></button>
-        <span style="color:#66d9ef">Settings</span>
-    </section>
-    <br>
-    <section>
-        <button id="gists-button" class="aligment"><i class="fas fa-code" aria-hidden="true"></i></button>
-        <span style="color:#50e74b">Gists</span>
-    </section>
-    <br>
-    <section>
-        <button id="stack-button" class="aligment"><i class="fab fa-stack-overflow" aria-hidden="true"></i></button>
-        <span style="color:#e9934d">Stack Overflow</span>
-    </section>
-    <br>
-    <section>
-        <button id="trend-button" class="aligment"><i class="fas fa-chart-line" aria-hidden="true"></i></button>
-        <span style="color:#f1579f">Trending</span>
-    </section>
-    <br>
-    <section>
-        <button id="scratch-button" class="aligment"><i class="fas fa-pencil-alt" aria-hidden="true"></i></button>
-        <span style="color:#9471d4">Scratch Pad</span>
-    </section>
-    <br>
-    <section>
-        <button id="playground-button" class="aligment"><i class="far fa-lightbulb" aria-hidden="true"></i></button>
-        <span style="color:#fff">Playground</span>
-        <i style="color: #fff" class="fas fa-lock"></i>
-    </section>
-    <br>
-    <section>
-        <button id="help-button" class="aligment"><i class="fas fa-question" aria-hidden="true"></i></button>
-        <span style="color:#eccd6e">Help/Intro</span>
-    </section>
+    <div id="main-nav">
+        <section>
+            <button id="setting-button" class="aligment"><i class="fa fa-wrench fa-xs" aria-hidden="true"></i></button>
+            <span style="color:#66d9ef">Settings</span>
+        </section>
+        <br>
+        <section>
+            <button id="gists-button" class="aligment"><i class="fas fa-code fa-xs" aria-hidden="true"></i></button>
+            <span style="color:#50e74b">Gists</span>
+        </section>
+        <br>
+        <section>
+            <button id="stack-button" class="aligment"><i class="fab fa-stack-overflow fa-xs" aria-hidden="true"></i></button>
+            <span style="color:#e9934d">Stack Overflow</span>
+        </section>
+        <br>
+        <section>
+            <button id="trend-button" class="aligment"><i class="fas fa-chart-line fa-xs" aria-hidden="true"></i></button>
+            <span style="color:#f1579f">Trending</span>
+        </section>
+        <br>
+        <section>
+            <button id="scratch-button" class="aligment"><i class="fas fa-pencil-alt fa-xs" aria-hidden="true"></i></button>
+            <span style="color:#9471d4">Scratch Pad</span>
+        </section>
+        <br>
+        <section>
+            <button id="playground-button" class="aligment"><i class="far fa-lightbulb fa-xs" aria-hidden="true"></i></button>
+            <span style="color:#fff">Playground</span>
+            <i style="color: #fff" class="fas fa-lock fa-xs"></i>
+        </section>
+        <br>
+        <section>
+            <button id="help-button" class="aligment"><i class="fas fa-question fa-xs" aria-hidden="true"></i></button>
+            <span style="color:#eccd6e">Help/Intro</span>
+        </section>
+        <div class="logo">
+            <div class="newlook">
+                <a href="http://initab.com/"> <img src="initab_logo.png" alt="initabe logo" class="image"/></a>    
+            </div>  
+            <div class="social-icon">
+                <div id="container-one">
+                    <a href="https://www.facebook.com"> <i class="fab fa-facebook-f fa-xs" aria-hidden="true"></i></a>
+                </div>
+                <div id="container-two">
+                    <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in fa-xs" aria-hidden="true"></i></a>
+                </div>
+                <div id="container-three">
+                    <a href="https://twitter.com/?lang=en"> <i class="fab fa-twitter fa-xs" aria-hidden="true"></i></a>
+                </div>
+                <div id="container-four">
+                    <a href="https://www.redditinc.com"> <i class="fab fa-reddit-alien fa-xs" aria-hidden="true"></i></a>
+                </div>
+                <div id="container-five">
+                    <a href="https://github.com"> <i class="fab fa-github-alt fa-xs" aria-hidden="true"></i></a>
+                </div>
+            </div>
     
-    <div class="logo">
-        <a href="http://initab.com/"><img src="initab_logo.png" alt="picture of inatab"></a>
-        <div class="social-icon">
-            <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
-            <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
-            <i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
-        </div> 
+        </div>
+    
     </div>
-</div>  
+    <main id="sections">
+        <div class="section-two">
+            <i class="fab fa-reddit-alien fa-sm" class="redditIcon"></i>
+            <span class="reddit-text">POPULAR ON R/JAVASCRIPT</span>
+            <ul id="list"></ul>
+            <script src="app.js"></script>    
+        </div>
+        <div class="section-three">
+                <i class="far fa-clock fa-sm"></i>
+                <span>RELEVANT JAVASCRIPT HISTORY</span>
+                <p>all the small things</p>     
+                <p>all the small things</p>     
+                 
+        </div>    
+    </main>
+     
 </body>
 </html>
