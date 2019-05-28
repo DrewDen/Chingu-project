@@ -1,10 +1,10 @@
-/* *styles for main page */
+/**styles for main page */
 
 html, body{
     margin: 0;
-    padding: 0;
-    height:100%;
+    height:100%;  /*! This made my divs be able to scale the whole page*/
     background:#282a36;
+   
    
 }
 span{
@@ -21,7 +21,7 @@ button{
     width: 160px;
     height: 100%;
     background:#44475a;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 10px; 
 }
 
@@ -34,11 +34,12 @@ button{
 }
 
 .logo{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     flex-direction: column;
 }
+
 
 /* *style for initab logo */
 .image:hover{
@@ -132,7 +133,7 @@ button{
 }
 
 
-
+/** styles for the main nav area on the side*/
 
 
 #setting-button{
@@ -178,47 +179,161 @@ button{
 /* *Style for sections that hold main content */
 
 #sections{
-    position: absolute;
-    left:170px;
+    position:fixed;
+    left:170px; 
     top:0;
-    background-color: #282a36;
     height:100vh;
     width:100vw;
+    /* border:5px solid red; */
+}
+
+.section-one{
+    width:255px;
+    overflow-y: scroll;
+    height:600px;
+    padding-top:35px;
+    padding-left: 35px;
+    /* border:5px solid red; */
+}
+
+.section-two{
+    position: absolute;
+    width:555px;
+    border-bottom:1px solid yellowgreen;
+    top:0;
+    left:300px;
+    padding-top:35px;
+    padding-left: 35px;
+    text-align: center;
+    height: 30vh;
+}
+
+.section-three{
+    position: absolute;
+    width:260px;
+    /* border: 5px solid red; */
+    top: 0;
+    left: 900px;
+    padding-top:35px;
+    padding-left: 35px;
+    text-align: center;
+    height: 90vh;
+    overflow-y: scroll;
 }
 
 
+
+.fa-clock{
+    color:#8be9fd;
+}
 .reddit-section .fa-reddit-alien{
     color:#8be9fd;
 }
 .reddit-text{
     color:#8be9fd;
 }
-
-.section-two::-webkit-scrollbar{ opacity:0;  width:0px}
-
-
-.section-two{
-    position: absolute;
-    width:250px;
-    overflow-y: scroll;
-    height:90vh;
-    left:35px;
-    padding-top:35px;
-    
-    
-   
-}
-
-.section-three{
-     width:600px;
-    height:100px;
-   
-    position:relative;
-    padding-top: 35px;
-    left:355px;
-     
-}
-
-.fa-clock{
+.js-text{
     color:#8be9fd;
+}
+.git-text{
+    color: #8be9fd;
+}
+.fa-github{
+    color: #8be9fd;
+}
+.section-one::-webkit-scrollbar{ opacity:0;  width:0px}
+
+/** styles for the clock  */
+
+.clock-position{
+    position: fixed;
+    width:555px;
+    /* border:5px solid red; */
+    bottom:100px;
+    left:469px;
+    padding-top:35px;
+    padding-left: 35px;
+    text-align: center;
+}
+
+.jsClock{
+    color: #8be9fd;
+    font-size: 100px;
+}
+
+.jsDate  {
+    font-size: 20px;
+    color: yellow;
+}
+
+.jsYear{
+    font-size: 20px;
+    color: yellow;
+}
+
+.jsDay{
+    font-size: 20px;
+    color: yellow;
+}
+
+
+
+/** Styles for relevant javascript area  */
+.history-text{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height:100px;
+    margin-top:40px; 
+}
+
+.fa-js{
+    color: cadetblue;
+}
+
+.js-history{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.js-history-text{
+    color: white;
+    padding-bottom: 30px;
+    
+}
+.history-text::-webkit-scrollbar{ opacity:0;  width:0px}
+
+.github-history{
+    display: flex;
+    flex-direction: column;
+}
+.github-text{
+    color:#6272a4;
+    font-size: 12px;
+}
+.issues-text{
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.repo-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section-three::-webkit-scrollbar{ opacity:0;  width:0px}
+
+
+.repo-part{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid yellowgreen;
+    font-size: 15px;
+    margin-bottom: 25px;
+    color: wheat;
 }
